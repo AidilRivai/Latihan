@@ -1,0 +1,147 @@
+######## Team Assignment
+Mini Apps v 1.0
+Member 2-3 orang 
+
+
+##### 
+- Ketika awal program di run, akan muncul 3 pilihan 
+
+
+Selamat Datang di Applikasi XXYY
+1. Register
+2. Login
+3. Exit 
+
+Ketika user memilih menu Register 
+
+---- Registration ---- 
+
+Masukkan Data :
+UserId : ..... 
+Ketentuan UserID :
+- Harus kombinasi huruf dan angka 
+- Tidak boleh ada karakter khusus/spesial char. 
+- minimal 6 karakter 
+- maksimal 20 karakter 
+- Lakukan Pengecekan Duplikasi, Tidak boleh ada UserId yg sama 
+- Jika ada duplikasi, atau tidak sesuai kriteria, akan keluar notifikasi 
+- Ketika ada masalah format UserId, user diminta memasukkan lagi UserID hingga formatnya benar (Maksimal 5X percobaan)
+- setelah 5X gagal, keluar dari apps 
+
+Password : ... 
+- Harus Kombinasi Huruf Kapital, Huruf Kecil, Angka dan spesial karakter / karakter khusus = &^%$#!@
+- Minimal 8 karakter 
+
+Masukkan Email : ... 
+- Lakukan Verifikasi Email, Ketentuan seperti Tugas sebelumnya.
+- Keluar Notif jika Email InValid 
+
+Nama : .... (Hanya Alfabet dan Spasi)
+Gender : ... (Hanya bisa Female atau Male .... Pria - wanita)
+Usia : ... (Harus Integer, Minimal 17 tahun, maksimal 80 tahun)
+Pekerjaan : .... (Hanya alfabet dan spasi)
+Hobi : .... (hanya alfabet dan isi lebih dari satu)
+Alamat : 
+    Nama Kota : (hanya alfabet dan spasi)
+    RT : (Numerik Integer)
+    RW : (Numerik Integer)
+    Zip COde : (Numerik Integer dan 5 karakter)
+    Geo : 
+        Lat : .... Numerik - Float/Integer
+        Longitude : .... Numerik - Float/Integer
+No HP : ... Harus Integer, Jumlah karakter 11 - 13
+
+Simpan Data (Y/N) :
+
+Y : Data tersimpan
+N : data tidak tersimpan 
+
+Setelah ini, baik memilih Y atau N akan kembali ke menu awal 
+
+Selamat Datang di Applikasi XXYY
+1. Register
+2. Login
+3. Exit 
+
+#### Ketika user memilih menu Login
+- user yg sudah registrasi akan bisa Login 
+
+Login 
+
+Masukkan UserID : ... 
+Masukkan Password : ... 
+
+Lakukan pengecekan ID dan Password 
+Notif :
+- ID dan Password Salah 
+- Password Salah, Jika ID sudah ada, tetapi password berbeda 
+- ID tidak terdaftar 
+- Anda Berhasil Login
+
+* Jika gagal melakukan Login, akan kembali ke menu utama .
+* Maksimal Percobaan Login 5X 
+
+
+--- Jika Berhasil Login --- 
+1. User Profile 
+2. Menu Transaksi 
+
+-- Jika Pilih User Profile --- 
+Akan keluar Data personal dari user yg Login 
+selain username dan password 
+
+Data Anda :
+nama :
+email : 
+gender : 
+usia : 
+pekerjaan : 
+hobi :
+alamat : 
+    Nama Kota : 
+    RT :
+    RW :
+    ZipCOde : 
+    Geo : 
+        Lat : 
+        Long : 
+No HP : 
+
+-- Jika pilih menu transaksi -- Menu CRUD 
+
+1. Create Data 
+2. Read data 
+3. Update Data 
+4. Delete Data 
+5. Kembali ke Menu awal 
+
+
+Data harus Dictionary :
+Nama Barang - Stok ==> Apps Gudang 
+Nama Barang - Harga ==> Apps Kasir 
+nama Karyawan - Gaji ==> Apps Penggajian
+mahasiswa - Nilai ==> Apps Kampus 
+atau yg sejenis 
+
+
+Ketentuan Menu CRUD :
+1. Read Data (Cetak Data)
+- Jika tidak ada data, keluar notif : Daftar Barang masih kosong 
+- Jika ada barang, akan ditampilkan satu persatu 
+
+2. Create Data (Tambah data)
+- Pengecekan jenis data, jika salah format keluar Notif 
+- Jenis format disesuaikan dg jenis data yg dipilih 
+- Pengecekan duplikasi :
+Jika data sudah ada sebelumnya :
+Keluar Notif 
+Data sudah ada, apakah data akan disimpan? (Y/N)
+Y : keluar notif => data tersimpan, dan mengupdate data barang 
+N : keluar notif => Data tidak tersimpan 
+
+3. Update Data 
+- user memasukkan nama data yg akan diubah 
+- Lakukan pengecekan apakah datanya ada di dalam Dictionary atau tidak 
+
+4. Delete Data 
+- Akan menghapus data 

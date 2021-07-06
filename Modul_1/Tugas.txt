@@ -1,0 +1,15 @@
+hari=int(input("Masukkan Hari: "))
+if hari<=4000 and hari>=0:
+    tahun=round(hari/365)
+    sisaharitahun=round(hari%365)
+    bulan=round(sisaharitahun/30)
+    sisaharibulan=round(sisaharitahun%30)
+    minggu=round(sisaharibulan/7)
+    hari=round(sisaharibulan%7)
+    print(f"{tahun:02} Tahun {bulan:02} Bulan {minggu:02} Minggu {hari:02} Hari")
+elif hari>4000:
+    print("Jumlah hari diatas batas maksimal")
+elif hari<0:
+    print("Jumlah hari di bawah batas minimum")
+else:
+    print("Jumlah Hari yang anda masukkan salah")
